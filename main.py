@@ -28,7 +28,7 @@ PPO_UPDATE_EPOCHS       = 100       # = 100   | Number of pass over entire batch
 PPO_TRAIN_EPOCHS        = 100       # = 2000  | Limit epochs for the PPO training loop
 PPO_UPPER_RETURN_LIMIT  = 100       # = 4     | Upper limit for the reward
 PPO_LOWER_RETURN_LIMIT  = 0         # = 1     | Lower limit for the reward. 0 because it considers rewards already adjusted to temporal difference
-REWARD_WINDOW           = 5         # Size of moving average window for weighted reward calculation
+REWARD_WINDOW           = 4         # Size of moving average window for weighted reward calculation
 SAVE_INTERVAL           = 20        # = 50    | interval for model checkpoints
 CONTROL_DT              = 0.006     # Time interval of one step in seconds, measured through profiling, should be adjusted to individual hardware setups
 
